@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/idEdtItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+
+        android:hint="Enter Name" />
+    <EditText
+        android:id="@+id/idEdtItemDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+
+        android:hint="Enter Mobile no." />
+
+
+
+    <!--button for adding item from edit text to list-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <Button
+        android:id="@+id/idBtnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="4dp"
+        android:layout_gravity="center"
+        android:text="Add"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/idBtnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        android:text="Update"
+        android:textAllCaps="false"
+         />
+    <Button
+        android:id="@+id/idBtnDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="4dp"
+        android:layout_gravity="center"
+        android:text="Delete"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/idBtnCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="4dp"
+        android:layout_gravity="center"
+        android:text="Select"
+        android:textAllCaps="false" />
+
+</LinearLayout>
+
+    <!--list view to display list of languages-->
+    <ListView
+        android:id="@+id/idLVLanguages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_below="@id/idEdtItemName"
+        android:focusable="true" />
+
+</LinearLayout>
